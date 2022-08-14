@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+    --green: #10B981;
+    --lightblue: #273549;
+    --lightgrey: #D5D4D8;
+    font-family: 'Inter', sans-serif;
+}
+
+#div-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 35px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF; 
+    margin-bottom: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+h2 {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3 {
+    color: var(--lightgrey);
+    font-weight: lighter;
+    font-style: regular;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#generate-el {
+    background: var(--green);
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 15px 9px 15px;
+    border-radius: 5px;
+    font-style: Medium;
+    font-size: 16px;
+}
+.line-1 {
+    margin: 35px;
+    height: 2px;
+    background: #2F3E53;
+}
+
+#div-fields {
+    display: flex;
+    justify-content: space-evenly;
+}
+.password-field {
+    display: table;
+    word-break: break-all;
+    color: var(--green);
+    margin: 0;
+    padding: 8px 18px 8px 18px;
+    border-radius: 5px;
+    font-style: Medium;
+    font-size: 16px;
+    text-align: center;
+    height: 20px;
+    text-align: center;
+    width: 175px;
+    background-color: var(--lightblue);
+}
+
+.password-question {
+    padding-bottom: 10px;
+}
+label {
+    color: #10B981;
+    
+}
+input {
+    background: var(--lightblue);
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    padding-left: 5px;
+    color: var(--lightgrey); 
+    text-align: center;
+}
+
+input:invalid {
+  border:1px solid red;
+}

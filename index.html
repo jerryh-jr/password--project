@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="div-header">
+            <h1>Generate a</h1>
+            <h2>random password</h2>
+            <h3>Never use an insecure password again.</h3>
+            <form class="password-question">
+                <label for="pwLength">Length of password: </label>
+                <input type="number" id="passwordLenght-el" name="pwLength" placeholder="15" required>
+                <!--<input type="number" id="passwordLenght-el" name="pwLength" oninput="checkInput()"> Not using currently-->
+            </form>
+            <button id="generate-el" onclick="generate()">Generate Passwords</button>
+        </div>
+        <div class="line-1"></div>
+        <div id="div-fields">
+            <p class="password-field" id="passwordOne-el" onclick="copy()"></p>
+            <p class="password-field" id="passwordTwo-el" onclick="copy()"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
